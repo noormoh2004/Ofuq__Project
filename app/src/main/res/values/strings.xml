@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">OfuqProject</string>
+    <string name="message_email">تم الإرسال بنجاح!</string>
+    <string name="message_email2">لقد أرسلنا لك رسالة على بريدك الإلكتروني \nلتفعيل حسابك </string>
+    <string name="message_email3">يرجى التحقق من صندوق الوارد</string>
+    <string name="button_text">العودة للرئيسية</string>
+
 </resources>
