@@ -15,7 +15,7 @@
             android:name=".start_screen"
             android:exported="false" />
         <activity
-            android:name=".activity_email_check"
+            android:name=".children_login_screen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,6 +29,10 @@
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".login_screen"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity_email_check"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>
