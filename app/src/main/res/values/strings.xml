@@ -10,6 +10,13 @@
     <string name="lets_go">هيا نبدأ اللعب</string>
     <string name="parent_tit1">أنا أب أو أم \nأو مربي</string>
     <string name="parent_dist">لإدارة حساب طفلي</string>
+
+    <string name="data_children">بيانات الطفل</string>
+    <string name="children_name">اسم الطفل</string>
+    <string name="age">العمر</string>
+    <string name="gender">الجنس</string>
+    <string name="next">التالي</string>
+
     <string name="parent_data"> بيانات ولي الأمر </string>
 
 </resources>
