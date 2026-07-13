@@ -112,7 +112,6 @@
             android:layout_marginStart="4dp"
             android:layout_marginTop="16dp"
             android:text="@string/parent_tit1"
-
             android:textColor="@color/purple"
             android:textSize="22sp"
             android:textStyle="bold"
@@ -123,10 +122,10 @@
             android:id="@+id/txt_subtitle2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="4dp"
             android:text="@string/parent_dist"
             android:textColor="@color/purple"
-            android:textSize="14sp"
+            android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/txt_title2"
             app:layout_constraintTop_toBottomOf="@+id/txt_title2" />
 

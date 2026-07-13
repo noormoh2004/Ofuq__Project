@@ -1,0 +1,294 @@
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/parentloginbackground"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<RelativeLayout
+    android:id="@+id/header_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    >
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/circle_purple_bg"
+        android:contentDescription="رجوع"
+        android:src="@drawable/baseline_arrow_back_24"
+        tools:ignore="TouchTargetSizeCheck"
+        >
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/parent_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/parent_data"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/purple"
+        android:textSize="25sp"
+        android:textStyle="bold"
+      >
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/family_Image"
+        android:layout_width="350dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/parent_data"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/family"
+        android:layout_centerHorizontal="true"
+        >
+
+    </ImageView>
+
+</RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/login_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_container"
+        android:layout_marginTop="50dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_card_bg"
+            android:layout_margin="10dp"
+
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/user_solid_full"
+                android:layout_marginLeft="12dp"
+                android:layout_gravity="center_vertical"
+                tools:ignore="TouchTargetSizeCheck"
+                >
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الاسم الكامل"
+                android:textSize="18dp"
+                android:textColor="@color/purple"
+                android:layout_marginLeft="20dp"
+               android:layout_centerVertical="true"
+                >
+
+            </TextView>
+
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="أكتب اسمك الكامل"
+            android:inputType="text"
+            android:textSize="16dp"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:layout_marginLeft="100dp"
+
+            >
+
+        </EditText>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_card_bg"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/name"
+
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/email_solid_full"
+                android:layout_marginLeft="12dp"
+                android:layout_gravity="center_vertical"
+                tools:ignore="TouchTargetSizeCheck"
+                >
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="البريد الالكتروني"
+                android:textSize="18dp"
+                android:textColor="@color/purple"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+
+                >
+
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/etemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="example@gmail.com"
+                android:inputType="textEmailAddress"
+                android:textSize="16dp"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:layout_marginLeft="35dp"
+                >
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_card_bg"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/email"
+
+            >
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/phone_solid_full"
+                tools:ignore="TouchTargetSizeCheck"
+                >
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="رقم الجوال"
+                android:textSize="18dp"
+                android:textColor="@color/purple"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+
+                >
+
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/etphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="05xxxxxxxx"
+                android:inputType="number"
+                android:textSize="16dp"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:layout_marginLeft="140dp"
+                >
+
+            </EditText>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_card_bg"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/phone"
+
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/lock_solid_full"
+                android:layout_marginLeft="12dp"
+                android:layout_gravity="center_vertical"
+                tools:ignore="TouchTargetSizeCheck"
+                >
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="كلمة المرور"
+                android:textSize="18dp"
+                android:textColor="@color/purple"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                >
+            </TextView>
+
+            <EditText
+                android:id="@+id/etpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="••••••••"
+                android:inputType="textPassword"
+                android:textSize="16dp"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:layout_marginLeft="150dp"
+                >
+
+            </EditText>
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/eye_solid_full"
+                >
+
+            </ImageView>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="يجب أن تكون 8 أحرف على الأقل"
+            android:textSize="15sp"
+            android:layout_below="@+id/password"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/gray"
+            >
+
+        </TextView>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
