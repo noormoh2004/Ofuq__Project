@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OfuqProject">
         <activity
+            android:name=".Home_Page"
+            android:exported="false" />
+        <activity
             android:name=".Splash_Screen"
             android:exported="true">
             <intent-filter>
@@ -25,9 +28,7 @@
             android:exported="false" />
         <activity
             android:name=".start_screen"
-            android:exported="false">
-
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".children_login_screen"
             android:exported="true" />
