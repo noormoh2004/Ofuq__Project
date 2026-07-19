@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OfuqProject">
         <activity
+            android:name=".storis_library"
+            android:exported="false" />
+        <activity
+            android:name=".stories_screen"
+            android:exported="false" />
+        <activity
             android:name=".Home_Page"
             android:exported="false" />
         <activity
@@ -28,7 +34,7 @@
             android:exported="false" />
         <activity
             android:name=".start_screen"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".children_login_screen"
             android:exported="true" />
