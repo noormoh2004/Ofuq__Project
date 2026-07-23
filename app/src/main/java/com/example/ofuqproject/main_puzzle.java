@@ -8,13 +8,20 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Home_Page extends AppCompatActivity {
+import com.example.ofuqproject.fragments.PuzzleFragment;
+
+public class main_puzzle extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_home_page);
-
+        setContentView(R.layout.activity_main_puzzle);
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, new PuzzleFragment())
+                    .commit();
+        }
     }
+
 }

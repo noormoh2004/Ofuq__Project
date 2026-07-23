@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.PuzzleFragment"
+    android:background="@drawable/backgroundcard1">
+
+    <TextView
+        android:id="@+id/tv_smart_pazzle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="حزازير ذكية"
+        android:textColor="@color/purple"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_puzzles"
+        android:layout_width="380dp"
+        android:layout_height="550dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_input_background"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_smart_pazzle">
+
+        <TextView
+            android:id="@+id/tv_puzzle_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="لغز اليوم"
+            android:textSize="28sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_puzzle_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="شيء له وجه ولا يتكلم، وله يدان ولا يصفق؟"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+        <ImageView
+            android:id="@+id/iv_puzzle_image"
+            android:layout_width="300dp"
+            android:layout_height="180dp"
+            android:src="@drawable/puzzle_main"
+
+            />
+        <TextView
+            android:id="@+id/tv_hint_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAlignment="center"
+            android:textColor="#5D4037"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+        <EditText
+            android:id="@+id/et_answer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/round_background2"
+            android:hint="اكتب إجابتك هنا..."
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:gravity="center_vertical"
+            android:inputType="text" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_hint"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="8dp"
+                android:text="إظهار تلميح"
+                android:backgroundTint="#FFEFB0"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btn_check"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="8dp"
+                android:text="تحقق من الحل"
+                android:backgroundTint="@color/purple"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="8dp"
+                android:text="اللغز التالي"
+                android:backgroundTint="@color/purple"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+        <!-- أضيفيها داخل الـ LinearLayout الرئيسي -->
+        <ImageView
+            android:id="@+id/iv_celebration"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_celebration_24"
+            android:visibility="gone" /> <!-- مخفية في البداية -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_error_message"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:background="@drawable/error_box_bg"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/ll_puzzles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"> <!-- اجعليه gone ليختفي عند تشغيل التطبيق -->
+
+        <!-- الأيقونة الحزينة -->
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_sentiment_very_dissatisfied_24" />
+
+        <!-- النصوص -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="إجابة غير صحيحة"
+                android:textColor="#EC6565"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content"
+                android:text="حاول مرة أخرى!"
+                android:textColor="#37474F"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_success_message"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:background="@drawable/success_box_bg"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/ll_puzzles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"> <!-- مخفي في البداية -->
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/outline_sentiment_satisfied_24" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="إجابة صحيحة!"
+                android:textColor="#2E7D32"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="أحسنت يا بطل!"
+                android:layout_margin="15dp"
+                android:textColor="#37474F"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
