@@ -1,4 +1,5 @@
 <LinearLayout
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -100,16 +101,7 @@
             />
 
 
-        <ImageView
-            android:id="@+id/img_arrow_forword"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="25dp"
-            android:background="@drawable/circle_purple_background"
-            android:padding="3dp"
-            android:src="@drawable/outline_arrow_forward_24"
-            android:layout_alignParentEnd="true"
-            />
+
     </RelativeLayout>
 
 

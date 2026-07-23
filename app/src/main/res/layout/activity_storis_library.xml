@@ -11,7 +11,7 @@
     tools:context=".storis_library">
 
     <ImageView
-        android:id="@+id/img_arrow3"
+        android:id="@+id/img_arrow"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_margin="25dp"

@@ -1,10 +1,22 @@
-<LinearLayout android:layout_width="match_parent"
+<LinearLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/email_background"
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
 
+    <ImageView
+        android:id="@+id/img_arrow3"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+       android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/circle_purple_background"
+        android:padding="4dp"
+        android:src="@drawable/outline_arrow_back_24"
+        />
 
     <TextView
         android:layout_width="match_parent"
@@ -12,7 +24,6 @@
         android:text="واحة المرح والقراءة "
         android:textStyle="bold"
         android:textSize="35dp"
-        android:layout_marginTop="40dp"
         android:textColor="@color/purple"
         android:gravity="center">
 
@@ -41,14 +52,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_margin="10dp">
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        >
 
         <LinearLayout
-            android:id="@+id/stories"
+            android:id="@+id/stories_Library"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:background="@color/pink"
-            android:layout_marginBottom="7dp">
+            android:background="@drawable/pink_rounded_box"
+            android:layout_marginBottom="10dp">
 
 
             <ImageView
@@ -81,11 +94,11 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/hazazir"
+            android:id="@+id/pazzle"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:background="@color/pink"
-            android:layout_marginBottom="7dp">
+            android:background="@drawable/pink_rounded_box"
+            android:layout_marginBottom="10dp">
 
 
             <ImageView
@@ -113,10 +126,10 @@
 
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/cub"
+            android:id="@+id/award"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:background="@color/pink">
+            android:background="@drawable/pink_rounded_box">
 
 
             <ImageView
@@ -146,28 +159,7 @@
     </LinearLayout>
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="15dp"
-        >
 
-    <Button
-        android:id="@+id/explore"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:text="استكشف الان"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:padding="0dp"
-        android:textSize="30sp"
-        android:backgroundTint="@color/purple"
-        android:elevation="8dp"
-        android:translationZ="4dp"
-        android:stateListAnimator="@null">
 
-    </Button>
-    </LinearLayout>
 
 </LinearLayout>

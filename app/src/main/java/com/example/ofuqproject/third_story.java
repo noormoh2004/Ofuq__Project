@@ -1,6 +1,9 @@
 package com.example.ofuqproject;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +23,29 @@ public class third_story extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+
+        ImageView img_arrow_back =findViewById(R.id.img_arrow_back);
+
+        img_arrow_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i =new Intent (third_story.this , second_story_part2.class);
+                startActivity(i);
+            }
+        });
+
+
+        ImageView img_arrow_forword =findViewById(R.id.img_arrow_forword);
+
+        img_arrow_forword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i =new Intent (third_story.this , third_story_part2.class);
+                startActivity(i);
+            }
+        });
+
+
     }
 }
