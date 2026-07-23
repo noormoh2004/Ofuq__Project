@@ -1,0 +1,173 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/email_background"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="واحة المرح والقراءة "
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/purple"
+        android:gravity="center">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="قصص جميلة، حزازير ذكية، وأوسمة تنتظرك"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        android:textColor="@color/purple"
+         />
+
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:src="@drawable/bgcard2"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:id="@+id/stories"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/pink"
+            android:layout_marginBottom="7dp">
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/book"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+
+                >
+
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="مكتبة القصص"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+
+                >
+
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hazazir"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/pink"
+            android:layout_marginBottom="7dp">
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/hazar"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                >
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="حزازير ذكية"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginLeft="70dp">
+
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/cub"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/pink">
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/cubb"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                >
+
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="لوحة الأوسمة"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginLeft="60dp">
+
+            </TextView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="15dp"
+        >
+
+    <Button
+        android:id="@+id/explore"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="استكشف الان"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="0dp"
+        android:textSize="30sp"
+        android:backgroundTint="@color/purple"
+        android:elevation="8dp"
+        android:translationZ="4dp"
+        android:stateListAnimator="@null">
+
+    </Button>
+    </LinearLayout>
+
+</LinearLayout>

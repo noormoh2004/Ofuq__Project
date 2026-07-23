@@ -18,6 +18,12 @@
             android:name=".Puzzle_win_screen"
             android:exported="false" />
         <activity
+            android:name=".storis_library"
+            android:exported="false" />
+        <activity
+            android:name=".stories_screen"
+            android:exported="false" />
+        <activity
             android:name=".Home_Page"
             android:exported="false" />
         <activity
