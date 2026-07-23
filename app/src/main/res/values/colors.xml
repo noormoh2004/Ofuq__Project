@@ -4,12 +4,14 @@
     <color name="white">#FFFFFFFF</color>
     <color name="purple">#9361ED</color>
     <color name="gray">#8E8E93</color>
+
+    <color name="light_yellow1">#FCE4EC</color>
+
     <color name="boldpurple">#9259FD</color>
-    <color name="Lightyellow">#EFEAC8</color>
+    <color name="Lightyellow2">#EFEAC8</color>
     <color name="pink">#EFCAED</color>
     <color name="red">#8B0000</color>
     <color name="light_red">#FFD7D7</color>
-
 
 
 </resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- لون خلفية الصندوق الداخلي (بنفسجي فاتح جداً شفاف أو هادئ) -->
+    <solid android:color="#F3EFF8" />
+    <!-- حواف دائرية للصندوق -->
+    <corners android:radius="20dp" />
+</shape>

@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OfuqProject">
+
         <activity
             android:name=".Awards_Board"
             android:exported="false" />
@@ -38,8 +39,12 @@
         <activity
             android:name=".first_story"
             android:exported="false" />
+
         <activity
-            android:name=".Splash_Screen"
+            android:name=".Educational_Consultant"
+            android:exported="false" />
+        <activity
+            android:name=".Puzzle_win_screen"
             android:exported="false" />
         <activity
             android:name=".storis_library"
@@ -50,14 +55,21 @@
         <activity
             android:name=".Home_Page"
             android:exported="false" />
-        <activity
-            android:name=".puzzle_screen"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity
+            android:name=".Splash_Screen"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".main_puzzle"
+            android:exported="false">
+
         </activity>
         <activity
             android:name=".Parents_login"
