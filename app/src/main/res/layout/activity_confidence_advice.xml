@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EECCF4"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- عنوان الشاشة -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="كيف أزيد ثقة طفلي بنفسه؟"
+            android:textColor="@color/purple"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center" />
+
+        <!-- صورة تعبيرية (استخدمنا صورة trust2 الخاصة بالثقة) -->
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/trust2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp" />
+
+        <!-- صندوق النصائح -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. المدح بحكمة: شجعي جهوده وليس فقط النتيجة النهائية (مثل: 'أعجبتني محاولتك واجتهادك')."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"
+                android:lineSpacingExtra="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. منحه المسؤولية: كلفيه بمهام صغيرة تناسب عمره ليشعر بأهميته ودوره في البيت."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"
+                android:lineSpacingExtra="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. الاستماع لرأيه: دعيه يشارك في بعض القرارات البسيطة لتعزيز شعوره بالاستقلالية."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"
+                android:lineSpacingExtra="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. تجنب المقارنة: لا تقارنيه أبداً بالآخرين، فركزي على تطوره الشخصي وحده."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+
+        <!-- زر العودة -->
+        <Button
+            android:id="@+id/btn_back_confidence"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/purple"
+            android:text="العودة للرئيسية"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:elevation="8dp" />
+
+    </LinearLayout>
+</LinearLayout>

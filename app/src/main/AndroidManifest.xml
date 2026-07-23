@@ -41,7 +41,19 @@
             android:exported="false" />
 
         <activity
-            android:name=".Educational_Consultant"
+            android:name=".SadChildAdviceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExpressionAdviceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConfidenceAdviceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AngerAdviceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main_puzzle"
             android:exported="false" />
         <activity
             android:name=".Puzzle_win_screen"
@@ -67,9 +79,15 @@
         </activity>
 
         <activity
-            android:name=".main_puzzle"
-            android:exported="false">
 
+            android:name=".main_puzzle"
+            android:exported="false"/>
+        <activity
+            android:name=".Puzzle_win_screen"
+            android:exported="false" />
+        <activity
+            android:name=".Educational_Consultant"
+            android:exported="true">
         </activity>
         <activity
             android:name=".Parents_login"

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded_white"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="16dp"
+    android:layoutDirection="ltr">
+
+    <!-- سهم التوجيه في البداية (من اليمين) -->
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        android:layout_marginStart="8dp"/>
+
+    <!-- النصوص في المنتصف (العنوان والوصف) -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp">
+
+        <!-- عنوان النصيحة -->
+        <TextView
+            android:id="@+id/tvAdviceTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="كيف أتعامل مع غضب طفلي؟"
+            android:textColor="@color/purple"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- الوصف القصير -->
+        <TextView
+            android:id="@+id/tvAdviceDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="نصائح عملية لاحتواء نوبات الغضب."
+            android:textColor="@color/purple"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <!-- الصورة التعبيرية في النهاية (على اليسار) -->
+    <ImageView
+        android:id="@+id/imgAdvice"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/anger"
+        android:scaleType="centerCrop"/>
+
+</LinearLayout>

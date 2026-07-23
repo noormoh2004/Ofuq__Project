@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EECCF4"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- عنوان الشاشة -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="كيف أهدي طفلي الحزين؟"
+            android:textColor="@color/purple"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center" />
+
+        <!-- صورة تعبيرية (استخدمنا صورة sad_children الخاصة بالحزن) -->
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/sad_children"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp" />
+
+        <!-- صندوق النصائح -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. الاحتضان الدافئ: اللمسة الحانية والاحتضان يعطيان شعوراً بالأمان الفوري ويخففان وطأة الحزن."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"
+                android:lineSpacingExtra="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. تقبل مشاعره: لا تقللي من سبب حزنه، بل قولي له 'أنا أدرك أن هذا الأمر محزن بالنسبة لك'."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. البقاء بجانبه بصمت: احياناً لا يحتاج الطفل للكلام، بل لوجودك الهادئ والمطمئن بقربه."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"
+                android:lineSpacingExtra="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. إيجاد حلول لاحقاً: بعد أن يهدأ تماماً، يمكنك اقتراح أفكار بسيطة لتجاوز ما سبب له الحزن."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+
+        <!-- زر العودة -->
+        <Button
+            android:id="@+id/btn_back_sad"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/purple"
+            android:text="العودة للرئيسية"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:elevation="8dp" />
+
+    </LinearLayout>
+</LinearLayout>

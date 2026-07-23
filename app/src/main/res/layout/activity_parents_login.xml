@@ -274,7 +274,7 @@
                 android:layout_width="23dp"
                 android:layout_height="20dp"
                 android:layout_gravity="center_vertical"
-                android:layout_marginright="5dp"
+                android:layout_marginRight="5dp"
                 android:src="@drawable/eye_solid_full"
                 >
             </ImageView>
